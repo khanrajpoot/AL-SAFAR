@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageTitle">Al-Safar | Your Journey Begins Here</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">السفر <span>Al-Safar</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active" data-i18n="navHome">Home</a></li>
+                <li><a href="#about" data-i18n="navAbout">About</a></li>
+                <li><a href="#destinations" data-i18n="navDestinations">Destinations</a></li>
+                <li><a href="#umrah" data-i18n="navUmrah">Umrah &amp; Hajj</a></li>
+                <li><a href="#services" data-i18n="navServices">Services</a></li>
+                <li><a href="#testimonials" data-i18n="navReviews">Reviews</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switch" id="lang-switch" aria-label="Switch Language">اردو</button>
+                <a href="#booking" class="btn btn-primary nav-btn" data-i18n="navBook">Book Now</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+            <h1 data-i18n="heroTitle">Explore The World With <span>Al-Safar</span></h1>
+            <p data-i18n="heroSub">Discover breathtaking destinations, unforgettable adventures and exclusive travel packages crafted just for you.</p>
+            <div class="hero-actions">
+                <a href="#destinations" class="btn btn-primary" data-i18n="heroBtn1">Explore Destinations</a>
+                <a href="#booking" class="btn btn-outline" data-i18n="heroBtn2">Plan Your Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat">
+                <h2 data-count="12000">0</h2>
+                <p data-i18n="statTravelers">Happy Travelers</p>
+            </div>
+            <div class="stat">
+                <h2 data-count="150">0</h2>
+                <p data-i18n="statDestinations">Destinations</p>
+            </div>
+            <div class="stat">
+                <h2 data-count="25">0</h2>
+                <p data-i18n="statExperience">Years Experience</p>
+            </div>
+            <div class="stat">
+                <h2 data-count="98">0</h2>
+                <p data-i18n="statRating">5-Star Reviews</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="section-tag" data-i18n="aboutTag">About Us</span>
+                <h2 data-i18n="aboutTitle">Trusted Travel Partner Since 2001</h2>
+                <p data-i18n="aboutDesc">Al-Safar is a leading travel agency dedicated to turning your travel dreams into reality. From luxury getaways to budget-friendly adventures, we tailor every journey to your needs.</p>
+                <ul class="about-points">
+                    <li data-i18n="aboutPoint1">Handpicked hotels &amp; resorts</li>
+                    <li data-i18n="aboutPoint2">Best price guarantee</li>
+                    <li data-i18n="aboutPoint3">24/7 customer support</li>
+                    <li data-i18n="aboutPoint4">Visa assistance &amp; insurance</li>
+                </ul>
+            </div>
+            <div class="about-card">
+                <h3 data-i18n="aboutCardTitle">Why Choose Al-Safar?</h3>
+                <div class="feature">
+                    <span class="feature-icon">✈</span>
+                    <div>
+                        <h4 data-i18n="aboutFeat1Title">Flight Booking</h4>
+                        <p data-i18n="aboutFeat1Desc">Domestic &amp; international flights at the best rates.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🏨</span>
+                    <div>
+                        <h4 data-i18n="aboutFeat2Title">Hotel Reservations</h4>
+                        <p data-i18n="aboutFeat2Desc">Luxury stays in the world's most iconic locations.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🧭</span>
+                    <div>
+                        <h4 data-i18n="aboutFeat3Title">Guided Tours</h4>
+                        <p data-i18n="aboutFeat3Desc">Expert guides to make your trip unforgettable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-tag" data-i18n="destTag">Popular Destinations</span>
+                <h2 data-i18n="destTitle">Where Do You Want To Go?</h2>
+                <p data-i18n="destSub">Browse our most loved destinations and start packing your bags.</p>
+            </div>
+            <div class="dest-grid" id="dest-grid"></div>
+        </div>
+    </section>
+
+    <!-- Umrah & Hajj -->
+    <section class="umrah" id="umrah">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-tag" data-i18n="umrahTag">Umrah &amp; Hajj Packages</span>
+                <h2 data-i18n="umrahTitle">Spiritual Journeys of a Lifetime</h2>
+                <p data-i18n="umrahSub">Complete packages with flights, hotels near the Haram, visa, transport and guided ziyarah.</p>
+            </div>
+            <div class="umrah-grid" id="umrah-grid"></div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-tag" data-i18n="servicesTag">Our Services</span>
+                <h2 data-i18n="servicesTitle">Everything You Need For Travel</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">🛫</span>
+                    <h3 data-i18n="service1Title">Flight Tickets</h3>
+                    <p data-i18n="service1Desc">Reserve tickets with any airline worldwide at competitive prices.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏝️</span>
+                    <h3 data-i18n="service2Title">Holiday Packages</h3>
+                    <p data-i18n="service2Desc">All-inclusive packages for families, couples and groups.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🚐</span>
+                    <h3 data-i18n="service3Title">Airport Transfers</h3>
+                    <p data-i18n="service3Desc">Comfortable, private transfers from and to the airport.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🛂</span>
+                    <h3 data-i18n="service4Title">Visa Assistance</h3>
+                    <p data-i18n="service4Desc">Complete support to make your visa application stress-free.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🛡️</span>
+                    <h3 data-i18n="service5Title">Travel Insurance</h3>
+                    <p data-i18n="service5Desc">Stay protected with comprehensive insurance coverage.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📞</span>
+                    <h3 data-i18n="service6Title">24/7 Support</h3>
+                    <p data-i18n="service6Desc">Our experts are available around the clock to help you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-tag" data-i18n="testTag">Testimonials</span>
+                <h2 data-i18n="testTitle">What Our Travelers Say</h2>
+            </div>
+            <div class="testimonial-slider" id="testimonial-slider"></div>
+            <div class="slider-dots" id="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking" id="booking">
+        <div class="container booking-wrap">
+            <div class="booking-text">
+                <span class="section-tag" data-i18n="bookingTag">Book Your Trip</span>
+                <h2 data-i18n="bookingTitle">Let's Plan Your Next Adventure</h2>
+                <p data-i18n="bookingDesc">Fill in the form and our travel experts will contact you within 24 hours with the best offers.</p>
+            </div>
+            <form class="booking-form" id="booking-form">
+                <div class="form-row">
+                    <input type="text" id="name" data-i18n-placeholder="namePh" placeholder="Your Name" required>
+                    <input type="email" id="email" data-i18n-placeholder="emailPh" placeholder="Your Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="destination" data-i18n-placeholder="destPh" placeholder="Destination" required>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-row">
+                    <select id="travelers">
+                        <option value="1" data-i18n="trav1">1 Traveler</option>
+                        <option value="2" selected data-i18n="trav2">2 Travelers</option>
+                        <option value="3" data-i18n="trav3">3 Travelers</option>
+                        <option value="4+" data-i18n="trav4">4+ Travelers</option>
+                    </select>
+                    <select id="package">
+                        <option value="economy" data-i18n="pkgEconomy">Economy</option>
+                        <option value="standard" selected data-i18n="pkgStandard">Standard</option>
+                        <option value="luxury" data-i18n="pkgLuxury">Luxury</option>
+                    </select>
+                </div>
+                <textarea id="message" rows="3" data-i18n-placeholder="msgPh" placeholder="Special Requests (optional)"></textarea>
+                <button type="submit" class="btn btn-primary submit-btn" data-i18n="submitBtn">Request Booking</button>
+                <p class="form-success" id="form-success" data-i18n="formSuccess">Thank you! Our team will reach out to you soon.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="section-tag" data-i18n="contactTag">Contact Us</span>
+                <h2 data-i18n="contactTitle">Get In Touch</h2>
+                <p data-i18n="contactDesc">Have a question or need assistance? We would love to hear from you.</p>
+                <div class="contact-item" data-i18n="contactAddr">📍 123 Travel Street, Downtown City</div>
+                <div class="contact-item" data-i18n="contactPhone">📞 +1 (555) 123-4567</div>
+                <div class="contact-item" data-i18n="contactEmail">✉️ info@safar-travel.com</div>
+                <div class="contact-item" data-i18n="contactHours">🕘 Mon – Sat: 9:00 AM – 7:00 PM</div>
+            </div>
+            <div class="newsletter">
+                <h3 data-i18n="newsTitle">Subscribe To Our Newsletter</h3>
+                <p data-i18n="newsDesc">Get exclusive deals and travel tips straight to your inbox.</p>
+                <form id="newsletter-form">
+                    <input type="email" data-i18n-placeholder="newsPh" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary" data-i18n="newsBtn">Subscribe</button>
+                </form>
+                <p class="form-success" id="newsletter-success" data-i18n="newsSuccess">Subscribed successfully!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo">السفر <span>Al-Safar</span></a>
+                <p data-i18n="footerDesc">Your trusted travel companion for over two decades. Making the world your playground.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerQuick">Quick Links</h4>
+                <ul>
+                    <li><a href="#home" data-i18n="footerHome">Home</a></li>
+                    <li><a href="#about" data-i18n="footerAbout">About</a></li>
+                    <li><a href="#destinations" data-i18n="footerDest">Destinations</a></li>
+                    <li><a href="#contact" data-i18n="footerContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerTopDest">Top Destinations</h4>
+                <ul>
+                    <li><a href="#destinations" data-i18n="footerParis">Paris, France</a></li>
+                    <li><a href="#destinations" data-i18n="footerDubai">Dubai, UAE</a></li>
+                    <li><a href="#destinations" data-i18n="footerTokyo">Tokyo, Japan</a></li>
+                    <li><a href="#destinations" data-i18n="footerMaldives">Maldives</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footerCopy">&copy; 2026 Al-Safar Travel Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="back-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
